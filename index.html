@@ -1,74 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Landing Page</title>
-    <!-- Подключение Materialize CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <nav class="navbar-fixed">
-        <div class="nav-wrapper">
-          <a href="#"><b>TOUR-GUIDE</b></a>
-          <a href="#">Stories</a>
-          <a href="#">Gallery</a>
-          <a href="#">Features</a>
-          <a href="#">Write to us</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#"><i class="material-icons">facebook</i></a></li>
-            <li><a href="#"><i class="material-icons">facebook</i></a></li>
-            <li><a href="#"><i class="material-icons">facebook</i></a></li>
-            <li><a href="#"><i class="material-icons">facebook</i></a></li>
-            <li><a href="#"><i class="material-icons">facebook</i></a></li>
-          </ul>
-        </div>
-    </nav>
 
-    <div class="main_container">
-        <section class="stories">
-            <div class="stories__container">
-                <div class="stories__container__storytext">
-                    <h3>Let's hit the road</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
-                    <button class="btn">START</button>
-                </div>
-                
-                <img src="./assets/Screenshot_4.png" class="stories__container__storyimage"/>
-            </div>
-            <hr class="divider">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOUR-GUIDE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-            <div class="stories__container">
-                <img src="./assets/Screenshot_4.png" class="stories__container__storyimage"/>
-
-                <div class="stories__container__storytext">
-                    <h3>Story</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
-                    <button class="btn">MORE</button>
-                </div>
-            </div>
-            <hr class="divider">
-
-            <div class="stories__container">
-                <div class="stories__container__storytext">
-                    <h3>Story</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
-                    <button class="btn">MORE</button>
-                </div>
-                
-                <img src="./assets/Screenshot_4.png" class="stories__container__storyimage"/>
-            </div>
-            <hr class="divider">
-        </section>
-        <section class="gallery"></section>
-        <section class="features"></section>
-        <section class="write_to_us"></section>
+<body>
+  <nav class="navbar-fixed">
+    <div class="nav-wrapper">
+      <div class="nav-links">
+        <a href="#"><b>TOUR-GUIDE</b></a>
+        <a href="#">Stories</a>
+        <a href="#">Gallery</a>
+        <a href="#">Features</a>
+        <a href="#">Write to us</a>
       </div>
+
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#"><i class="material-icons">facebook</i></a></li>
+        <li><a href="#"><i class="material-icons">facebook</i></a></li>
+        <li><a href="#"><i class="material-icons">facebook</i></a></li>
+        <li><a href="#"><i class="material-icons">facebook</i></a></li>
+        <li><a href="#"><i class="material-icons">facebook</i></a></li>
+      </ul>
     </div>
-  </body>
+  </nav>
+
+  <main class="main_container">
+    <section class="stories">
+      <div class="stories__container">
+        <div class="stories__container__storytext">
+          <h3>Let's hit the road</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+          <button class="btn">START</button>
+        </div>
+
+        <img src="./assets/Screenshot_4.png" class="stories__container__storyimage" />
+      </div>
+      <hr class="divider">
+
+      <div class="stories__container">
+        <img src="./assets/Screenshot_4.png" class="stories__container__storyimage" />
+
+        <div class="stories__container__storytext">
+          <h3>Story</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+          <button class="btn">MORE</button>
+        </div>
+      </div>
+      <hr class="divider">
+
+      <div class="stories__container">
+        <div class="stories__container__storytext">
+          <h3>Story</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
+          <button class="btn">MORE</button>
+        </div>
+
+        <img src="./assets/Screenshot_4.png" class="stories__container__storyimage" />
+      </div>
+      <hr class="divider">
+    </section>
+    <section class="gallery">
+      <h2>Gallery</h2>
+      <div class="row">
+        <div class="col s12 m3">
+          <div class="card-panel">
+            <img src="./assets/d0477758b214dd87f732ff2901dbc3f8.jpg" alt="Image 3" class="responsive-img">
+            <div class="overlay white-text gallery__card__content">
+              <h5>Title</h5>
+              <span>Text for Image 3</span>
+              <button class="btn">MORE</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m3">
+          <div class="card-panel">
+            <img src="./assets/d0477758b214dd87f732ff2901dbc3f8.jpg" alt="Image 3" class="responsive-img">
+            <div class="overlay white-text gallery__card__content">
+              <h5>Title</h5>
+              <span>Text for Image 3</span>
+              <button class="btn">MORE</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m3">
+          <div class="card-panel">
+            <img src="./assets/d0477758b214dd87f732ff2901dbc3f8.jpg" alt="Image 3" class="responsive-img">
+            <div class="overlay white-text gallery__card__content">
+              <h5>Title</h5>
+              <span>Text for Image 3</span>
+              <button class="btn">MORE</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m3">
+          <div class="card-panel">
+            <img src="./assets/d0477758b214dd87f732ff2901dbc3f8.jpg" alt="Image 3" class="responsive-img">
+            <div class="overlay white-text gallery__card__content">
+              <h5>Title</h5>
+              <span>Text for Image 3</span>
+              <button class="btn">MORE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="features">
+      <h2>Features</h2>
+    </section>
+    <section class="write_to_us">
+      <h2>Write to us</h2>
+      <form class="write_to_us_form">
+        <div style="display: flex; flex-direction: row; gap:10px; justify-content: space-between;">
+          <div class="col s12 m3">
+            <label for="name">Name</label>
+            <input id="name" type="text" class="validate">
+          </div>
+
+          <div class="col s12 m3">
+            <label for="email">Email</label>
+            <input id="email" type="email" class="validate">
+          </div>
+
+          <div class="col s12 m3">
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel" class="validate">
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 20px;">
+          <b>Contact me via:</b>
+          <label>
+            <input name="contactMethod" type="radio" value="email" />
+            <span>Email</span>
+          </label>
+          <label>
+            <input name="contactMethod" type="radio" value="phone" />
+            <span>Phone</span>
+          </label>
+          <label>
+            <input name="contactMethod" type="radio" value="telegram" />
+            <span>Telegram</span>
+          </label>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <b>Topic:</b>
+          <select style="display: block;">
+            <option value="1">Post my story</option>
+            <option value="2">Invite to travel</option>
+            <option value="3">Play in film</option>
+          </select>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <b>Message:</b>
+          <textarea style="height: 12rem;"></textarea>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+          <p>
+            <label>
+              <input type="checkbox" class="filled-in" />
+              <span>I am a human</span>
+            </label>
+          </p>
+
+          <button class="btn">SEND</button>
+        </div>
+      </form>
+    </section>
+    <hr class="divider">
+  </main>
+
+  <footer>
+    <div class="footer__content">
+      <ul class="footer__links" class="right hide-on-med-and-down">
+        <li><a href="#"><i class="material-icons black-text">facebook</i></a></li>
+        <li><a href="#"><i class="material-icons black-text">facebook</i></a></li>
+        <li><a href="#"><i class="material-icons black-text">facebook</i></a></li>
+        <li><a href="#"><i class="material-icons black-text">facebook</i></a></li>
+        <li><a href="#"><i class="material-icons black-text">facebook</i></a></li>
+      </ul>
+      <b class="black-text">© UNTITLED 2019</b>
+    </div>
+  </footer>
+</body>
+
 </html>
