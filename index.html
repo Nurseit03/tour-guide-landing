@@ -15,11 +15,14 @@
     <div class="nav-wrapper">
       <div class="nav-links">
         <a href="#"><b>TOUR-GUIDE</b></a>
-        <a href="#">Stories</a>
-        <a href="#">Gallery</a>
-        <a href="#">Features</a>
-        <a href="#">Write to us</a>
+        <a href="#" class="right">Stories</a>
+        <a href="#" class="right">Gallery</a>
+        <a href="#" class="right">Features</a>
+        <a href="#" class="right">Write to us</a>
       </div>
+      <button id="nav-mobile-btn" class="hide-on-med-and-down">
+        <i class="material-icons black-text">menu</i>
+      </button>
 
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="#"><i class="material-icons">facebook</i></a></li>
@@ -71,8 +74,8 @@
     </section>
     <section class="gallery">
       <h2>Gallery</h2>
-      <div class="row">
-        <div class="col s12 m3">
+      <div class="gallery__content">
+        <div class="gallery__card">
           <div class="card-panel">
             <img src="./assets/d0477758b214dd87f732ff2901dbc3f8.jpg" alt="Image 3" class="responsive-img">
             <div class="overlay white-text gallery__card__content">
@@ -83,7 +86,7 @@
           </div>
         </div>
 
-        <div class="col s12 m3">
+        <div class="gallery__card">
           <div class="card-panel">
             <img src="./assets/d0477758b214dd87f732ff2901dbc3f8.jpg" alt="Image 3" class="responsive-img">
             <div class="overlay white-text gallery__card__content">
@@ -94,7 +97,7 @@
           </div>
         </div>
 
-        <div class="col s12 m3">
+        <div class="gallery__card">
           <div class="card-panel">
             <img src="./assets/d0477758b214dd87f732ff2901dbc3f8.jpg" alt="Image 3" class="responsive-img">
             <div class="overlay white-text gallery__card__content">
@@ -105,7 +108,7 @@
           </div>
         </div>
 
-        <div class="col s12 m3">
+        <div class="gallery__card">
           <div class="card-panel">
             <img src="./assets/d0477758b214dd87f732ff2901dbc3f8.jpg" alt="Image 3" class="responsive-img">
             <div class="overlay white-text gallery__card__content">
@@ -123,18 +126,18 @@
     <section class="write_to_us">
       <h2>Write to us</h2>
       <form class="write_to_us_form">
-        <div style="display: flex; flex-direction: row; gap:10px; justify-content: space-between;">
-          <div class="col s12 m3">
+        <div class="write_to_us_form__contacts">
+          <div class="write_to_us_form__contacts__contact">
             <label for="name">Name</label>
             <input id="name" type="text" class="validate">
           </div>
 
-          <div class="col s12 m3">
+          <div class="write_to_us_form__contacts__contact">
             <label for="email">Email</label>
             <input id="email" type="email" class="validate">
           </div>
 
-          <div class="col s12 m3">
+          <div class="write_to_us_form__contacts__contact">
             <label for="phone">Phone</label>
             <input id="phone" type="tel" class="validate">
           </div>
@@ -192,7 +195,7 @@
         <li><a href="#"><i class="material-icons black-text">facebook</i></a></li>
         <li><a href="#"><i class="material-icons black-text">facebook</i></a></li>
       </ul>
-      <b class="black-text">© UNTITLED 2019</b>
+      <span class="black-text">© UNTITLED 2019</span>
     </div>
   </footer>
 </body>
