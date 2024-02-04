@@ -186,6 +186,7 @@ nav ul a {
 .gallery__card {
   display: flex;
   flex-direction: column;
+  position: relative; 
 }
 
 .card-panel img {
@@ -262,6 +263,41 @@ nav ul a {
   .gallery__card {
     display: flex;
     width: 25vw;
+  }
+}
+
+.carousel__prev,
+.carousel__next {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  line-height: 40px;
+  z-index: 2;
+}
+
+.carousel__prev {
+  left: 10px;
+}
+
+.carousel__next {
+  right: 10px;
+}
+
+.gallery__content:hover .carousel {
+  display: block;
+}
+
+@media (max-width: 850px){
+  .carousel{
+    display: none!important;
   }
 }
 
