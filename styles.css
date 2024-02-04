@@ -1,7 +1,21 @@
 /*COMMON STYLES*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #f5f5f5;
   font-family: "Garamond", serif;
+  font-size: 16.5px;
+}
+
+.p {
+  margin: 0;
+}
+
+.deg90 {
+  transform: rotate(90deg);
 }
 
 .main_container {
@@ -9,6 +23,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 50px;
+}
+
+.btn {
+  width: fit-content;
+  background-color: inherit !important;
+  border: 1px solid #ccc;
+  box-shadow: none;
+  color: #ccc;
 }
 
 .btn-large {
@@ -19,6 +41,11 @@ body {
 /*NAVIGATION MENU*/
 nav {
   background-color: #fff;
+}
+
+#nav-mobile-btn{
+  border: none;
+  background: none;
 }
 
 @media screen and (min-width: 601px) {
@@ -85,24 +112,55 @@ nav ul a {
 
 
 /*STORIES SECTION*/
-.stories__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.stories__container__storytext {
+.story {
   padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 
   @media (max-width: 850px) {
-    padding: 0 10px;
+    padding: 30px;
   }
 }
 
-.stories__container__storyimage {
-  margin-top: -1.4px;
+.story__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
 }
 
+.story__content__image {
+  margin-top: -1.4px;
+  height: 100%;
+  width: 33.33vw;
+
+  @media (min-width: 600px) and (max-width: 850px) {
+    height: 500px;
+  }
+}
+
+#story__content__mainimage{
+  width: 50vw;
+}
+
+@media (max-width: 600px) {
+  .story__content{
+    flex-direction: column-reverse;
+  }
+
+  #second-story {
+    flex-direction: column; 
+  }
+
+  .story__content__image{
+    width: 100vw !important;
+  }
+
+  .divider{
+    display: none;
+  }
+}
 
 .gallery,
 .features,
@@ -114,9 +172,10 @@ nav ul a {
 }
 
 /* GALLERY SECTION */
-.gallery__content{
+.gallery__content {
   display: flex;
   flex-direction: row;
+  height: 150px;
 }
 
 .gallery .card-panel {
@@ -124,14 +183,12 @@ nav ul a {
   overflow: hidden;
 }
 
-.gallery__card{
+.gallery__card {
   display: flex;
   flex-direction: column;
 }
 
-.gallery img {
-  width: 100%;
-  height: auto;
+.card-panel img {
   display: block;
 }
 
@@ -173,29 +230,96 @@ nav ul a {
 
 @media screen and (max-width: 599px) {
   .gallery__card {
-    display: none; /* Скрыть все изображения на экранах меньше 600px */
+    display: none;
+    /* Скрыть все изображения на экранах меньше 600px */
+  }
+
+  .gallery__content{
+    height: unset;
   }
 
   .gallery__card:first-child {
-    display: flex; /* Показать только первое изображение на экранах меньше 600px */
+    display: flex;
   }
 }
 
 @media screen and (min-width: 600px) and (max-width: 849px) {
   .gallery__card {
-    display: none; /* Скрыть все изображения на экранах от 600px до 849px */
+    display: none;
+  }
+
+  .gallery__content{
+    height: unset;
   }
 
   .gallery__card:nth-child(-n+2) {
-    display: flex; /* Показать первые два изображения на экранах от 600px до 849px */
+    display: flex;
+    width: 50vw;
   }
 }
 
 @media screen and (min-width: 850px) {
   .gallery__card {
-    display: flex; /* Показать все изображения на экранах 850px и больше */
+    display: flex;
+    width: 25vw;
   }
 }
+
+/*FEATURES SECTION*/
+.features__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  border: none;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.feature {
+  flex-basis: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  gap: 10px;
+}
+
+@media (min-width: 850px) {
+  .feature:not(:nth-child(3n), :last-child) {
+    border-right: 1px solid black;
+  }
+
+  .feature:nth-child(n + 1):not(:nth-last-child(-n + 3)) {
+    border-bottom: 1px solid black;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 850px) {
+  .feature {
+    flex-basis: 50%;
+    /* два элемента на строку */
+  }
+
+  .feature:not(:nth-child(2n)) {
+    border-right: 1px solid black;
+  }
+
+  .feature:nth-child(n + 1):not(:nth-last-child(-n + 2)) {
+    border-bottom: 1px solid black;
+  }
+}
+
+@media (max-width: 600px) {
+  .feature {
+    flex-basis: 100%;
+    /* один элемент на строку */
+    border-bottom: 1px solid gray !important;
+  }
+}
+
+
 /* CONTACT FORM */
 .write_to_us_form__contacts {
   display: flex;
@@ -210,7 +334,7 @@ nav ul a {
   }
 }
 
-.write_to_us_form__contacts__contact{
+.write_to_us_form__contacts__contact {
   display: flex;
   flex-direction: column;
 }
@@ -233,4 +357,11 @@ nav ul a {
 .footer__links {
   display: flex;
   gap: 10px;
+}
+
+.footer__links>li>a>i {
+  font-size: 20px;
+  padding: 9px 10px;
+  border: 1px solid gray;
+  border-radius: 100%;
 }

@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TOUR-GUIDE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
@@ -20,38 +21,39 @@
         <a href="#" class="right">Features</a>
         <a href="#" class="right">Write to us</a>
       </div>
+
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#"><i class="fa-brands fa-twitter black-text"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-facebook black-text"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram black-text"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-youtube black-text"></i></a></li>
+        <li><a href="#"><i class="fa-regular fa-envelope black-text"></i></a></li>
+      </ul>
+
       <button id="nav-mobile-btn" class="hide-on-med-and-down">
         <i class="material-icons black-text">menu</i>
       </button>
-
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#"><i class="material-icons">facebook</i></a></li>
-        <li><a href="#"><i class="material-icons">facebook</i></a></li>
-        <li><a href="#"><i class="material-icons">facebook</i></a></li>
-        <li><a href="#"><i class="material-icons">facebook</i></a></li>
-        <li><a href="#"><i class="material-icons">facebook</i></a></li>
-      </ul>
     </div>
   </nav>
 
   <main class="main_container">
     <section class="stories">
-      <div class="stories__container">
-        <div class="stories__container__storytext">
+      <div class="story__content">
+        <div class="story">
           <h3>Let's hit the road</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
           <button class="btn">START</button>
         </div>
 
-        <img src="./assets/Screenshot_4.png" class="stories__container__storyimage" />
+        <img src="./assets/flame.webp" class="story__content__image" id="story__content__mainimage"/>
       </div>
       <hr class="divider">
 
-      <div class="stories__container">
-        <img src="./assets/Screenshot_4.png" class="stories__container__storyimage" />
+      <div class="story__content"  id="second-story">
+        <img src="./assets/flame2.jpg" class="story__content__image" />
 
-        <div class="stories__container__storytext">
+        <div class="story">
           <h3>Story</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
@@ -60,15 +62,15 @@
       </div>
       <hr class="divider">
 
-      <div class="stories__container">
-        <div class="stories__container__storytext">
+      <div class="story__content">
+        <div class="story">
           <h3>Story</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
           <button class="btn">MORE</button>
         </div>
 
-        <img src="./assets/Screenshot_4.png" class="stories__container__storyimage" />
+        <img src="./assets/flame3.png" class="story__content__image" />
       </div>
       <hr class="divider">
     </section>
@@ -77,10 +79,10 @@
       <div class="gallery__content">
         <div class="gallery__card">
           <div class="card-panel">
-            <img src="./assets/d0477758b214dd87f732ff2901dbc3f8.jpg" alt="Image 3" class="responsive-img">
+            <img src="./assets/gallery1.webp" alt="Image 1" class="responsive-img">
             <div class="overlay white-text gallery__card__content">
               <h5>Title</h5>
-              <span>Text for Image 3</span>
+              <span>Auene vulperate impsum</span>
               <button class="btn">MORE</button>
             </div>
           </div>
@@ -88,10 +90,10 @@
 
         <div class="gallery__card">
           <div class="card-panel">
-            <img src="./assets/d0477758b214dd87f732ff2901dbc3f8.jpg" alt="Image 3" class="responsive-img">
+            <img src="./assets/gallery2.avif" alt="Image 2" class="responsive-img">
             <div class="overlay white-text gallery__card__content">
               <h5>Title</h5>
-              <span>Text for Image 3</span>
+              <span>Auene vulperate impsum</span>
               <button class="btn">MORE</button>
             </div>
           </div>
@@ -99,10 +101,10 @@
 
         <div class="gallery__card">
           <div class="card-panel">
-            <img src="./assets/d0477758b214dd87f732ff2901dbc3f8.jpg" alt="Image 3" class="responsive-img">
+            <img src="./assets/gallery3.jpg" alt="Image 3" class="responsive-img">
             <div class="overlay white-text gallery__card__content">
               <h5>Title</h5>
-              <span>Text for Image 3</span>
+              <span>Auene vulperate impsum</span>
               <button class="btn">MORE</button>
             </div>
           </div>
@@ -110,10 +112,10 @@
 
         <div class="gallery__card">
           <div class="card-panel">
-            <img src="./assets/d0477758b214dd87f732ff2901dbc3f8.jpg" alt="Image 3" class="responsive-img">
+            <img src="./assets/gallery4.png" alt="Image 4" class="responsive-img">
             <div class="overlay white-text gallery__card__content">
               <h5>Title</h5>
-              <span>Text for Image 3</span>
+              <span>Auene vulperate impsum</span>
               <button class="btn">MORE</button>
             </div>
           </div>
@@ -122,6 +124,43 @@
     </section>
     <section class="features">
       <h2>Features</h2>
+      <div class="features__content">
+        <div class="feature">
+          <i class="material-icons deg90">flight</i>
+          <b>One</b>
+          <p>Duis vel erat odio. Duis sed elementum magna, vel egestas dui.</p>
+        </div>
+  
+        <div class="feature">
+          <i class="material-icons">map</i>
+          <b>Two</b>
+          <p>Cras imperdiet augue et euismod mollis</p>
+        </div>
+  
+        <div class="feature">
+          <i class="material-icons deg90">local_movies</i>
+          <b>Three</b>
+          <p>Phasellus sit amet lacus orci. Aliquam accumsan aliquet urna eget commodo.</p>
+        </div>
+  
+        <div class="feature">
+          <i class="material-icons">alarm</i>
+          <b>Four</b>
+          <p>Vestibilum cosequat felis mi, ut blandit arcu commodo vel.</p>
+        </div>
+  
+        <div class="feature">
+          <i class="material-icons">center_focus_weak</i>
+          <b>Five</b>
+          <p>Nullam nec elit nec augue commodo ultricies ut ac lorem.</p>
+        </div>
+  
+        <div class="feature">
+          <i class="material-icons">wifi_tethering</i>
+          <b>Six</b>
+          <p>Donec mollis massa id lectus fermentum tempor. Nulla finibus massa ex.</p>
+        </div>
+      </div>
     </section>
     <section class="write_to_us">
       <h2>Write to us</h2>
@@ -189,11 +228,11 @@
   <footer>
     <div class="footer__content">
       <ul class="footer__links" class="right hide-on-med-and-down">
-        <li><a href="#"><i class="material-icons black-text">facebook</i></a></li>
-        <li><a href="#"><i class="material-icons black-text">facebook</i></a></li>
-        <li><a href="#"><i class="material-icons black-text">facebook</i></a></li>
-        <li><a href="#"><i class="material-icons black-text">facebook</i></a></li>
-        <li><a href="#"><i class="material-icons black-text">facebook</i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter black-text"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-facebook black-text"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram black-text"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-youtube black-text"></i></a></li>
+        <li><a href="#"><i class="fa-regular fa-envelope black-text"></i></a></li>
       </ul>
       <span class="black-text">© UNTITLED 2019</span>
     </div>
