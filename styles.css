@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+.show-important{
+  display: unset !important;
+}
+
 body {
   background-color: #f5f5f5;
   font-family: "Garamond", serif;
@@ -362,6 +366,10 @@ nav ul a {
 
 
 /* CONTACT FORM */
+#write_to_us {
+  padding: 50px;
+}
+
 .write_to_us_form__contacts {
   display: flex;
   flex-direction: row;
