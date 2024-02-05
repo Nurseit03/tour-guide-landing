@@ -19,7 +19,6 @@ body {
 }
 
 .main_container {
-  padding-top: 64px;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -175,7 +174,7 @@ nav ul a {
 .gallery__content {
   display: flex;
   flex-direction: row;
-  height: 150px;
+  width: 100vw;
 }
 
 .gallery .card-panel {
@@ -191,6 +190,8 @@ nav ul a {
 
 .card-panel img {
   display: block;
+  height: 300px;
+  width: 100%;
 }
 
 .overlay {
@@ -241,6 +242,10 @@ nav ul a {
 
   .gallery__card:first-child {
     display: flex;
+  }
+
+  .card-panel img{
+    width: 100vw;
   }
 }
 
